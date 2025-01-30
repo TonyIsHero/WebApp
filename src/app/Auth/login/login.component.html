@@ -1,0 +1,88 @@
+<div class="body">
+    <div  class="login-container">
+        <div class="logo-section">
+            <h1 style="padding-left: 5rem;">FoodHub</h1>
+        </div>
+        <div class="form-container" [ngClass]="{'flipped':!isNew}">
+        <div class="login-section">
+        <form class="login-form" (ngSubmit)="onLogin()">
+            
+            <h1 style="margin-bottom: 1.5rem;">Welcome back</h1>
+            <p style="margin-top: -1.75rem; color: #ccc;">Please enter your your details</p>
+            <button class="google-signin">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google logo" style="width: 35px; vertical-align: middle; margin-right: 8px;">
+                <p style="font-size: 19px;">Sign in with Google</p>
+              </button>
+              <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+                <hr style="flex-grow: 1; border: none; border-top: 1px solid #ccc; margin: 0 10px;">
+                <span>or</span>
+                <hr style="flex-grow: 1; border: none; border-top: 1px solid #ccc; margin: 0 10px;">
+              </div>
+              <div class="email-section">
+            <label for="email" style="margin-bottom: 5px;">Email Address</label>
+            <input type="email" id="email" required />
+        </div>
+        <div class="pass-section">
+            <label for="password" style="margin-bottom: 5px;">Password</label>
+            <input type="password" id="password" required />
+        </div>
+            <div class="remember_forgot">
+                <div class="rememberme">
+            <input type="checkbox" id="remember" name="remember">Remember me for 30 days
+        </div>
+        <div class="forgot-pass">
+            <p><a href="/forgot-password" style="text-decoration: none; color: rgb(2, 171, 238);">Forgot Password?</a></p>
+        </div>
+            </div>
+            <button type="submit" class="signin">
+                <p style="color: #ffffff; font-size: 19px;  margin: 0;">Sign in</p></button>
+            <div class="no-account">
+                <p>Don't have an account? <a (click)="toggleLogin()" style="color: rgb(2, 171, 238);" id="signuptoggle"> Sign-up</a></p>
+            </div>
+        </form>
+
+        </div>
+        <div  class="signup-section">
+        <h1 style="position: relative;" >Create a new account</h1>
+            <button class="google-signin" style="width: 90%; margin-top: 1rem;">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google logo" style="width: 35px; vertical-align: middle; margin-right: 8px;">
+                <p style="font-size: 19px;">Sign up with Google</p>
+              </button>
+              <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+                <hr style="flex-grow: 1; border: none; border-top: 1px solid #ccc; margin: 0 10px;">
+                <span>or</span>
+                <hr style="flex-grow: 1; border: none; border-top: 1px solid #ccc; margin: 0 10px;">
+              </div>
+        <form class="signup-form" (ngSubmit)="onSignup()">
+            <div class="name-section">
+                <div class="name-item">
+                <p>Name</p>
+            </div>
+            <div class="first-lastname" style="padding-top: 0.5rem;">
+                <input type="text" id="name" placeholder="First Name" style="width: 45%;" required />
+                <input type="text" id="name" placeholder="Last Name" style="width: 45%; margin-left: 2rem;" required />
+            </div>
+            </div>
+            <div class="phone-section">
+                <label for="phone" style="margin-bottom: 5px;">Phone</label>
+                <input type="number" id="phone" required />
+            </div>
+            <div class="email-section">
+                <label for="email" style="margin-bottom: 5px;">Email Address</label>
+                <input type="email" id="email" required />
+            </div>
+                <button type="submit" class="signin">
+                    <p style="color: #ffffff; font-size: 19px;  margin: 0;">
+                        Sign Up</p></button>
+        </form>
+        </div>
+    </div>
+    </div>
+    <div class="image-container">
+        <!-- https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 -->
+        <!-- <img src="assets/img/login.png" alt="Login Image" class="image-login"/> -->
+        <video autoplay muted loop class="background-video">
+            <source src="assets/video/glass_wine.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
