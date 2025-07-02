@@ -89,23 +89,23 @@
     font-size: 16px; 
     cursor: pointer;
 }
-.email-section, .pass-section{
+.email-section, .pass-section, .username-section{
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
     margin-bottom: 1.2rem;
 }
 
-.phone-section, .name-section{
+/* .password-section{
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
     margin-bottom: 1.2rem;
-}
-.first-lastname{
+} */
+/* .first-lastname{
     display: flex;
-}
-#email, #password, #name, #phone{
+} */
+#email, #password, #username{
     height: 2.5rem;
     border: 2px #ccc solid; 
     border-radius: 8px;

@@ -1,0 +1,28 @@
+.side-navbar{
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1C1C1E;
+    position:fixed;
+}
+.food-menu-img, .orders-img, .fav-img, .reserve-img, .phone-img, .exit-img{
+    height: 32px;
+    width: 32px;
+}
+.bar-actions{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+.bar-actions li{
+    padding-left: 1rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    cursor: pointer;
+}
+.side-navbar .bar-actions span{
+    color: white;
+}
